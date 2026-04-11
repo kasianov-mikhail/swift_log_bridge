@@ -1,6 +1,6 @@
 <div align="center">
 
-# Swift Log Bridge
+# 📝 Swift Log Bridge
 
 **Flutter bridge to Apple's [swift-log](https://github.com/apple/swift-log)**
 
@@ -17,14 +17,14 @@ trace · debug · info · notice · warning · error · critical
 > [!NOTE]
 > iOS only.
 
-## Installation
+## 📦 Installation
 
 ```yaml
 dependencies:
   swift_log_bridge: ^0.1.0
 ```
 
-## Usage
+## 🚀 Usage
 
 ```dart
 import 'package:swift_log_bridge/swift_log_bridge.dart';
@@ -36,6 +36,6 @@ await logger.error('Request failed', metadata: {'status': '500'});
 await logger.debug('Cache hit');
 ```
 
-## How It Works
+## ⚙️ How It Works
 
 Each `Logger` instance maps to a `Logging.Logger` on iOS via method channels. By default, swift-log prints to the console — configure a backend like [Scout](https://github.com/kasianov-mikhail/scout) on the iOS side to persist logs.
